@@ -348,6 +348,44 @@ function Card(props) {
 
 -------------------------------------------------------------------------------------------------------------------
 
+<h3>11. How to pass Object to child Components</h3>
+
+```jsx
+import { blog } from './Data/blog';
+
+function App(){
+  return(
+    <div>
+       <div className='blogContainer'>
+        {blog.map((v, i) => {
+          return (
+            <BlogCard blogdata={v} key={i} />
+          )
+        })}
+       </div>
+    </div>
+
+  )
+}
+
+export default App;
+
+
+// BLOG-CARD
+function BlogCard({ blogdata }) {
+  return (
+    <div className='blogCard'>
+      <h1>{blogdata.id}</h1>
+      <h5>{blogdata.title}</h5>
+      <p>{blogdata.body}</p>
+    </div>
+  )
+}
+
+```
+for further understanding you can see firstproject folder
+
+
 
 
 

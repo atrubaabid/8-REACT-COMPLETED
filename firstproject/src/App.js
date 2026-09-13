@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Props from './9-Understanding-Props';
 import ChildrenProps from './10-Using-Children-Props';
+import { blog } from './Data/blog';
 
 function App() {
 
@@ -22,9 +23,9 @@ function App() {
 
       <h1>{myname}</h1>
 
-      {arr.map((v) => {
+      {arr.map((v, i) => {
         return (
-          <div>{v + 2}</div>
+          <div key={i}>{v + 2}</div>
         )
       })}
 
@@ -89,9 +90,16 @@ function App() {
       </ChildrenProps>
 
 
+      {/* 11. How to pass Object to child Components */}
 
 
-
+      <div className='blogContainer'>
+        {blog.map((v, i) => {
+          return (
+            <BlogCard blogdata={v} key={i} />
+          )
+        })}
+      </div>
 
 
     </div>
@@ -101,10 +109,21 @@ function App() {
 export default App;
 
 
-
+// CARD
 function Card() {
   return (
     <div className='cardDiv'>CardDiv
+    </div>
+  )
+}
+
+// BLOG-CARD
+function BlogCard({ blogdata }) {
+  return (
+    <div className='blogCard'>
+      <h1>{blogdata.id}</h1>
+      <h5>{blogdata.title}</h5>
+      <p>{blogdata.body}</p>
     </div>
   )
 }

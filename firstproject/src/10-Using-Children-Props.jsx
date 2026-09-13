@@ -9,7 +9,7 @@ export default function ChildrenProps({ children }) {
             {/* 1 */}
             {/* <p>{props.children}</p> */}
             {/* 2 */}
-            <p>{children}</p>
+            {children}
         </div>
     )
 }

@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -36,21 +36,22 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.main{
+.main {
   color: yellow;
   background-color: #61dafb;
   border: 1px solid red;
   padding: 20px 0;
- 
- 
+
+
 }
 
-.rowss{
+.rowss {
   padding: 1rem;
   max-width: 1320px;
   margin-inline: auto;
@@ -61,9 +62,30 @@
   flex-wrap: wrap;
 }
 
-.cardDiv{
+.cardDiv {
   height: 200px;
   width: 200px;
   background-color: aquamarine;
 }
 
+
+.blogContainer {
+  max-width: 1320px;
+  margin-inline: auto;
+  background-color: #00c8ff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 0;
+
+}
+
+.blogCard {
+  padding: 1rem;
+  background-color: antiquewhite;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+ 
+}
