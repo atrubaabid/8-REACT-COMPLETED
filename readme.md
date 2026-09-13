@@ -348,6 +348,8 @@ function Card(props) {
 
 -------------------------------------------------------------------------------------------------------------------
 
+
+
 <h3>11. How to pass Object to child Components</h3>
 
 ```jsx
@@ -383,7 +385,15 @@ function BlogCard({ blogdata }) {
 }
 
 ```
-for further understanding you can see firstproject folder
+for further understanding you can see **firstproject** folder
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+<h3>12. How to Add FontAwesome Icon</h3>
+
 
 
 
