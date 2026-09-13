@@ -392,7 +392,7 @@ for further understanding you can see **firstproject** folder
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h3>12. How to Add FontAwesome Icon</h3>
+<h3>12. How to Add Font Awesome Icon</h3>
 
 
 
