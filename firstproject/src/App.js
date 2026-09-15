@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 import Props from './9-Understanding-Props';
+import ChildrenProps from './10-Using-Children-Props';
 
 function App() {
 
@@ -78,11 +79,20 @@ function App() {
 
       {/* 9. Understanding Props */}
 
-      <Props email="example@gmail.com" phone="123456" obj={obj}/>
+      <Props email="example@gmail.com" phone="123456" obj={obj} />
+
+
+      {/* 10. Using Children Props */}
+
+      <ChildrenProps>
+        <h1>This is a Children Props</h1>
+      </ChildrenProps>
 
 
 
-     
+
+
+
 
     </div>
   );

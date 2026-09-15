@@ -250,11 +250,12 @@ and after this you can use all the classes of bootstrap in app.js
 
 -------------------------------------------------------------------------------------------------------------------
 
+
 <h3>9. Understanding Props</h3>
 
 Props = Parent component se Child component ko data bhejne ka tareeqa.
 
-**Parent:**
+**Parent: data deta hai 📦**
 
 ```jsx
 function App() {
@@ -272,10 +273,10 @@ function App() {
 }
 ```
 
-**Child:**
+**Child: data receive karta hai 🎁**
 
 ```jsx
-function Child({ obj,email,phone }) {
+function Header({ obj,email,phone }) {
 
     // 1. Method
     // console.log(props);
@@ -294,7 +295,7 @@ function Child({ obj,email,phone }) {
     console.log(obj.program);
     console.log(email);
     console.log(phone);
-    
+
   return (
     <div>
 
@@ -308,6 +309,41 @@ function Child({ obj,email,phone }) {
     )
 }
 ```
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+<h3>10. Using Children Props</h3>
+
+Component ke andar jo content likha ho, woh props.children ke through milta hai.
+
+**Parent: data deta hai 📦**
+```jsx
+function App() {
+  return (
+    <Card>
+      <h1>Hello Atruba</h1>
+    </Card>
+  );
+}
+```
+Yahan <h1>Hello Atruba</h1> children props hai.
+
+
+**Child: data receive karta hai 🎁**
+```jsx
+function Card(props) {
+  return ( 
+    <div>{props.children}</div>
+  )
+}
+```
+
+
+
+
+
+
 
 
 
