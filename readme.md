@@ -228,21 +228,88 @@ function App() {
 
 -------------------------------------------------------------------------------------------------------------------
 
+
+
 <h3>8. Setup + Adding Bootstrap in React</h3>
 
 ```
 npm i bootstrap
 ```
+
 run this command in your vs code terminal and then check **package.json** file for confirmation of **("bootstrap": "^5.3.8",)** after that
 
 write these lines in index.js file
+
 ```
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/js/bootstrap.bundle"
 ```
 and after this you can use all the classes of bootstrap in app.js
 
+
+
 -------------------------------------------------------------------------------------------------------------------
+
+<h3>9. Understanding Props</h3>
+
+Props = Parent component se Child component ko data bhejne ka tareeqa.
+
+**Parent:**
+
+```jsx
+function App() {
+  let obj = {
+    student: "Atruba",
+    program: "BSCS",
+  }
+
+  return (
+    <div>
+    <Header email="example@gmail.com" phone="123456" obj={obj} />
+    </div>
+
+    )
+}
+```
+
+**Child:**
+
+```jsx
+function Child({ obj,email,phone }) {
+
+    // 1. Method
+    // console.log(props);
+    // console.log(props.email);
+    // console.log(props.phone);
+
+    // 2. Method
+    // let { obj,email,phone } = props;
+    // console.log(obj.student);
+    // console.log(obj.program);
+    // console.log(email);
+    // console.log(phone);
+
+    // 3. Method
+    console.log(obj.student);
+    console.log(obj.program);
+    console.log(email);
+    console.log(phone);
+    
+  return (
+    <div>
+
+            <p>{obj.student}</p>
+            <p>{obj.program}</p>
+            <p>{email}</p>
+            <p>{phone}</p>
+
+    </div>
+
+    )
+}
+```
+
+
 
 
 

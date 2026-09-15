@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
+import Props from './9-Understanding-Props';
 
 function App() {
 
@@ -75,11 +76,13 @@ function App() {
 
       </div>
 
+      {/* 9. Understanding Props */}
+
+      <Props email="example@gmail.com" phone="123456" obj={obj}/>
 
 
 
-
-
+     
 
     </div>
   );
