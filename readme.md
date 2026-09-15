@@ -322,12 +322,12 @@ Component ke andar jo content likha ho, woh props.children ke through milta hai.
 function App() {
   return (
     <Card>
-      <h1>Hello Atruba</h1>
+      <h1>Hello Atruba</h1> -> this one is children props
     </Card>
   );
 }
 ```
-Yahan <h1>Hello Atruba</h1> children props hai.
+
 
 
 **Child: data receive karta hai 🎁**
