@@ -313,11 +313,16 @@ function Header({ obj,email,phone }) {
 
 -------------------------------------------------------------------------------------------------------------------
 
+
+
 <h3>10. Using Children Props</h3>
+
+children special prop hai jo parent ke component ke opening aur closing tag ke beech ka content child component ko deta hai.
 
 Component ke andar jo content likha ho, woh props.children ke through milta hai.
 
 **Parent: data deta hai 📦**
+
 ```jsx
 function App() {
   return (
@@ -331,6 +336,7 @@ function App() {
 
 
 **Child: data receive karta hai 🎁**
+
 ```jsx
 function Card(props) {
   return ( 
@@ -338,6 +344,11 @@ function Card(props) {
   )
 }
 ```
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
