@@ -40,9 +40,41 @@ function App() {
 
       {/* 7. React Components */}
 
-      <Card />
       <Header />
+      <div className='rowss'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+
+      </div>
       <Footer />
+
+
+      {/* 8. Setup + Adding Bootstrap in React */}
+
+      <div className='container-fluid mt-5'>
+        <div className='container bg-info'>
+          <div className='row'>
+            <div className='col-12 d-flex gap-5 justify-content-center'>
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
 
 
 
@@ -57,13 +89,9 @@ export default App;
 
 
 
-function Card(){
-  return(
-    <div>
-      <h1>Card</h1>
-      <h1>Card</h1>
-      <h1>Card</h1>
-      <h1>Card</h1>
+function Card() {
+  return (
+    <div className='cardDiv'>CardDiv
     </div>
   )
 }

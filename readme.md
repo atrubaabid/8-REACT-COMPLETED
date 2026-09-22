@@ -228,6 +228,25 @@ function App() {
 
 -------------------------------------------------------------------------------------------------------------------
 
+<h3>8. Setup + Adding Bootstrap in React</h3>
+
+```
+npm i bootstrap
+```
+run this command in your vs code terminal and then check **package.json** file for confirmation of **("bootstrap": "^5.3.8",)** after that
+
+write these lines in index.js file
+```
+import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/js/bootstrap.bundle"
+```
+and after this you can use all the classes of bootstrap in app.js
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 

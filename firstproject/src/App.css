@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -44,5 +48,22 @@
   padding: 20px 0;
  
  
+}
+
+.rowss{
+  padding: 1rem;
+  max-width: 1320px;
+  margin-inline: auto;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cardDiv{
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
 }
 
