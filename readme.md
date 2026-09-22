@@ -150,17 +150,15 @@ for HTML
 <h1>{myname}</h1>
 ```
 
-for css
+for CSS
 
 ```css
 <h1 style={{ color: "red", backgroundColor: "yellow" }}>{myname}</h1>
 ```
 
+also you can use css by app.css file like normal we use css
 
-
-
-
-<h5>for understanding how we can write html and css in javascript file watch firstproject/src/app.js file</h5>
+<h5>for further understanding how we can write html and css in javascript file watch firstproject/src/app.js file</h5>
 
 
 -------------------------------------------------------------------------------------------------------------------
@@ -178,10 +176,40 @@ Component = reusable part of a React website.
 
 Har component ko alag bana kar baar baar use kar sakte ho.
 
-1. Method
+**1. Method**
 - you need to make component file in src folder like Header.jsx and then after completion your code you can import it in your App.js file (for all the procedure you can see firstproject folder)
+  
+Header.jsx file code
 
-2. Method
+```jsx
+function Header() {
+    return (
+        <div>
+            <h1>Header Content Shows here</h1>
+        </div>
+    )
+}
+
+export default Header
+```
+
+App.js file code
+
+```jsx
+import Header from './Header';
+
+function App() {
+    return(
+        <div>
+      <Header />
+        </div>
+    )
+}
+
+```
+
+
+**2. Method**
 - you can make component in your App.js file after the (export deafault app) and use it as a tag
 
 
