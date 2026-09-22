@@ -15,7 +15,8 @@ function App() {
   return (
     <div className="App">
 
-      {/* html */}
+      {/*  6. Understanding JSX */}
+      {/*  html */}
 
       <h1>{myname}</h1>
 
@@ -36,6 +37,10 @@ function App() {
 
       <h1 className='main'>{myname}</h1>
 
+
+      {/* 7. React Components */}
+
+      <Card />
       <Header />
       <Footer />
 
@@ -49,5 +54,18 @@ function App() {
 }
 
 export default App;
+
+
+
+function Card(){
+  return(
+    <div>
+      <h1>Card</h1>
+      <h1>Card</h1>
+      <h1>Card</h1>
+      <h1>Card</h1>
+    </div>
+  )
+}
 
 

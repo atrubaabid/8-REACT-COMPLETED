@@ -139,21 +139,34 @@ React work with 4 files
 <li>.tsx file  ->  typescript + XML file  ->   we can use 'html' between 'typescript'  in that file</li>
 </ul>
 
-for HTML
+for HTML in App.js file
 
-```js
-  let myname = "Syeda Atruba"
+```jsx
+  function App() {
+      let myname = "Syeda Atruba"
+    return (
+        <div>       
+              <h1>{myname}</h1>
+        </div>
+    )
+}
+
+export default App
 ```
-👇
 
-```html
-<h1>{myname}</h1>
-```
+for CSS in App.js file
 
-for CSS
+```jsx
+  function App() {
+      let myname = "Syeda Atruba"
+    return (
+        <div>       
+                <h1 style={{ color: "red", backgroundColor: "yellow" }}>{myname}</h1>
+        </div>
+    )
+}
 
-```css
-<h1 style={{ color: "red", backgroundColor: "yellow" }}>{myname}</h1>
+export default App
 ```
 
 also you can use css by app.css file like normal we use css
