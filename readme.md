@@ -394,6 +394,32 @@ for further understanding you can see **firstproject** folder
 
 <h3>12. How to Add Font Awesome Icon</h3>
 
+first you need to go on this site https://docs.fontawesome.com/web/use-with/react 
+
+after that install these package in your working folder cmd
+
+**1. Add the React Component**
+```
+npm i --save @fortawesome/react-fontawesome@latest
+```
+
+**2. Add SVG Core**
+```
+npm i --save @fortawesome/fontawesome-svg-core
+```
+
+**3. Add Icon Packages**
+```
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+npm i --save @fortawesome/free-brands-svg-icons
+```
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
