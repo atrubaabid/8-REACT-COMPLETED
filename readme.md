@@ -396,7 +396,7 @@ for further understanding you can see **firstproject** folder
 
 first you need to go on this site https://docs.fontawesome.com/web/use-with/react 
 
-after that install these package in your working folder cmd
+after that install these packages in your working folder cmd
 
 **1. Add the React Component**
 ```
@@ -415,8 +415,34 @@ npm i --save @fortawesome/free-regular-svg-icons
 npm i --save @fortawesome/free-brands-svg-icons
 ```
 
+**And, Now you can use it like this**
+```jsx
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFaceAngry } from '@fortawesome/free-regular-svg-icons';
+
+
+function App(){
+  return(
+    <div>
+      <FontAwesomeIcon icon={faWhatsapp}/>
+      <FontAwesomeIcon icon={faFaceAngry}/>
+      <FontAwesomeIcon icon={faFacebook}/>
+      <FontAwesomeIcon icon={faInstagram}/>
+    </div>
+
+  )
+}
+
+export default App;
+```
+
 
 -------------------------------------------------------------------------------------------------------------------
+
+
+<h3>13. How to Add Font Awesome Icon</h3>
+
 
 
 

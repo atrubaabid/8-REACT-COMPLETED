@@ -5,6 +5,9 @@ import Footer from './Footer';
 import Props from './9-Understanding-Props';
 import ChildrenProps from './10-Using-Children-Props';
 import { blog } from './Data/blog';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFaceAngry } from '@fortawesome/free-regular-svg-icons';
 
 function App() {
 
@@ -100,6 +103,17 @@ function App() {
           )
         })}
       </div>
+
+      {/* 12. How to Add Font Awesome Icon */}
+
+      <FontAwesomeIcon icon={faWhatsapp}  className='fs-1'/>
+      <FontAwesomeIcon icon={faFaceAngry} className='fs-1'/>
+      <FontAwesomeIcon icon={faFacebook} className='fs-1'/>
+      <FontAwesomeIcon icon={faInstagram} className='fs-1'/>
+
+
+
+      
 
 
     </div>
