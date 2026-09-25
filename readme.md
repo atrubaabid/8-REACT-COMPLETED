@@ -441,7 +441,67 @@ export default App;
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h3>13. How to Add Font Awesome Icon</h3>
+<h3>13. How to Setup Tailwind CSS in React</h3>
+
+**Step 1 — Tailwind install karo**
+```
+npm install -D tailwindcss@3
+```
+
+**Step 2 — Tailwind ki config files banao**
+```
+npx tailwindcss init -p
+```
+
+Ab tumhare project mein ye do files ban jaengi:
+```
+tailwind.config.js ✅
+postcss.config.js ✅
+```
+
+**Step 3 — tailwind.config.js open karo**
+
+ab **tailwind.config.js** file me jo code hai usko replace karke ye code likho:
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+**Step 4 — src/index.css open karo**
+
+usme ye code paste krdo
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+**Step 5 — Ab Tailwind test karo ❤️**
+```jsx
+function App() {
+  return (
+    <div className="bg-blue-500 text-white text-3xl p-5">
+      Hello Tailwind
+    </div>
+  );
+}
+
+export default App;
+```
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
