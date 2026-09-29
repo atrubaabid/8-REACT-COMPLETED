@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import weblogo from './images/logo img.webp'
 import { useState } from 'react';
+import mybtn from './button.module.css'
 
 function App() {
 
@@ -122,6 +123,16 @@ function App() {
 
           : ""
       }
+
+
+      {/* 20. Module Style for a component */}
+
+      <div className='mt-[50px]'>
+        <button className={mybtn.info}>Info</button>
+        <button className={mybtn.danger}>Danger</button>
+        <button className={mybtn.success}>Success</button>
+      </div>
+
 
 
 

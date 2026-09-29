@@ -713,6 +713,72 @@ function App() {
 
 -------------------------------------------------------------------------------------------------------------------
 
+<h2>20. Module Style for a component</h2>
+
+CSS Modules are used in React to create component-specific CSS, so the styles of one component don't accidentally affect another component.
+```
+src/
+   └── button.module.css    -> your file
+```
+
+
+you can use this file like this
+**button.module.css file** 
+```css
+.info {
+    padding: 10px;
+    background-color: aqua;
+    margin-right: 5px;   
+}
+
+.danger {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    margin-right: 5px;
+}
+
+.success {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    margin-right: 5px;
+}
+```
+
+**App.js file**
+```jsx
+import mybtn from './button.module.css'
+
+
+function App() {
+
+  return (
+    <div>
+      
+        <button className={mybtn.info}>Info</button>
+        <button className={mybtn.danger}>Danger</button>
+        <button className={mybtn.success}>Success</button>
+
+    </div>
+  );
+}
+```
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+<h2>21. show or Hide Password | PROJECT</h2>
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 

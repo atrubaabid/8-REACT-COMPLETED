@@ -1,0 +1,25 @@
+.info {
+    padding: 10px;
+    background-color: aqua;
+    margin-right: 5px;
+    
+}
+
+.danger {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    margin-right: 5px;
+    
+
+
+}
+
+.success {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    margin-right: 5px;
+    
+
+}
