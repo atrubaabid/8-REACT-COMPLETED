@@ -504,7 +504,7 @@ export default App;
 
 <h3>14. How to import CSS & images in React</h3>
 
-#####FOR IMPORT CSS
+**FOR IMPORT CSS**
 For example, if you create a **Header.jsx** file and a **Header.css** file to keep the CSS separate for that component, you just need to import the CSS file into your Header.jsx component like this.
 
 **Header.css**
