@@ -1,6 +1,6 @@
 <h1>REACT COMPLETE</h1>
 
-<h3>1. WHAT IS REACT?</h3>
+<h2>1. WHAT IS REACT?</h2>
 
 <p>React.js → JavaScript ki library hai jo fast aur interactive websites/web apps banane ke liye use hoti hai.
 
@@ -25,7 +25,8 @@ MPA (Multi Page Application) → Har new page/request par naya page load hota ha
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h3> 2. JS MODULE | DEFAULT & NAME EXPORT | IMPORTANT CONCEPT</h3>
+<h2> 2. JS MODULE | DEFAULT & NAME EXPORT | IMPORTANT CONCEPT</h2>
+
 <p>JS MODULE  =>  (export) (import)
 
 <ol><li><b>Now we learn import export logic with simple JS, first you need to open cmd in your woring folder</b>
@@ -52,7 +53,7 @@ for run the file in terminal
 
 -------------------------------------------------------------------------------------------------------------------
 
-<h3>3. Prerequisites for Learning React</h3>
+<h2>3. Prerequisites for Learning React</h2>
 
 <ul>
 <li>HTML</li>
@@ -67,7 +68,7 @@ for run the file in terminal
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h3>4. REACT Installation & Setup</h3>
+<h2>4. REACT Installation & Setup</h2>
 
 <p>
 you need to download Node.js
@@ -98,7 +99,7 @@ Through npx => create your project
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h3>5. Directory Structure of React App </h3>
+<h2>5. Directory Structure of React App </h2>
 
 <ol>
 File/Folder   -------------------------	Easy Meaning
@@ -128,7 +129,7 @@ File/Folder   -------------------------	Easy Meaning
 
 -------------------------------------------------------------------------------------------------------------------
 
-<h3>6. Understanding JSX</h3>
+<h2>6. Understanding JSX</h2>
 
 <p>
 React work with 4 files
@@ -176,7 +177,7 @@ also you can use css by app.css file like normal we use css
 
 -------------------------------------------------------------------------------------------------------------------
 
-<h3>7. React Components</h3>
+<h2>7. React Components</h2>
 
 Component = reusable part of a React website.
 
@@ -230,7 +231,7 @@ function App() {
 
 
 
-<h3>8. Setup + Adding Bootstrap in React</h3>
+<h2>8. Setup + Adding Bootstrap in React</h2>
 
 ```
 npm i bootstrap
@@ -251,7 +252,7 @@ and after this you can use all the classes of bootstrap in app.js
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h3>9. Understanding Props</h3>
+<h2>9. Understanding Props</h2>
 
 Props = Parent component se Child component ko data bhejne ka tareeqa.
 
@@ -315,7 +316,7 @@ function Header({ obj,email,phone }) {
 
 
 
-<h3>10. Using Children Props</h3>
+<h2>10. Using Children Props</h2>
 
 children special prop hai jo parent ke component ke opening aur closing tag ke beech ka content child component ko deta hai.
 
@@ -350,7 +351,7 @@ function Card(props) {
 
 
 
-<h3>11. How to pass Object to child Components</h3>
+<h2>11. How to pass Object to child Components</h2>
 
 ```jsx
 import { blog } from './Data/blog';
@@ -392,7 +393,7 @@ for further understanding you can see **firstproject** folder
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h3>12. How to Add Font Awesome Icon</h3>
+<h2>12. How to Add Font Awesome Icon</h2>
 
 first you need to go on this site https://docs.fontawesome.com/web/use-with/react 
 
@@ -441,7 +442,7 @@ export default App;
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h3>13. How to Setup Tailwind CSS in React</h3>
+<h2>13. How to Setup Tailwind CSS in React</h2>
 
 **Step 1 — Tailwind install karo**
 ```
@@ -502,7 +503,7 @@ export default App;
 
 -------------------------------------------------------------------------------------------------------------------
 
-<h3>14. How to import CSS in React</h3>
+<h2>14. How to import CSS in React</h2>
 
 **FOR IMPORT CSS**
 For example, if you create a **Header.jsx** file and a **Header.css** file to keep the CSS separate for that component, you just need to import the CSS file into your Header.jsx component like this.
