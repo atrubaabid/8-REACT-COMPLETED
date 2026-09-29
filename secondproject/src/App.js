@@ -6,16 +6,31 @@ import { useState } from 'react';
 
 function App() {
 
+  // 17. HOOKS (Usestate in hooks)
+
   // let n = 10;
 
   const [count, setCount] = useState(0)
 
-  let hey = () => {
+  let increase = () => {
     //  n++
     //  console.log(n);
-    setCount(count+1)
+    setCount(count + 1)
 
   }
+
+
+
+  // ---------------------------------------------------------------
+
+
+
+// 16. Event Handling 
+
+  let hey = () => {
+    alert(`hey`)
+  }
+
 
   let addData = (a, b) => {
     alert(`you addition is ${a + b}`)
@@ -45,16 +60,27 @@ function App() {
 
       {/* 16. Event Handling */}
 
-      <button className='bg-red-500 p-[10px] rounded text-white mr-[10px]' onClick={hey}> Save</button>
+      <button className='bg-red-500 p-[10px] rounded text-white mr-[10px] mb-[10px]' onClick={hey}> Save</button>
 
-      <button className='bg-orange-500 p-[10px] rounded text-white' onClick={() => addData(5, 50)}>Save</button>
+      <button className='bg-orange-500 p-[10px] rounded text-white mb-[10px]' onClick={() => addData(5, 50)}>Save</button><br />
 
 
 
       {/* 17. HOOKS (Usestate in hooks) */}
 
       {/* {n} */}
-      {count}
+
+      <div className='bg-red-500 h-[50px] w-[200px] flex  justify-evenly items-center m-auto mb-[10px]'>
+
+        <button className='bg-yellow-300 p-[5px] rounded' onClick={increase}> UseState increase</button>
+
+        <p className='bg-yellow-300 p-[5px] rounded w-[40px]' >{count}</p>
+
+      </div>
+
+
+      
+
 
 
 
