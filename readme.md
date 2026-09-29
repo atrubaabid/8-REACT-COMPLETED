@@ -770,10 +770,33 @@ function App() {
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h2>21. show or Hide Password | PROJECT</h2>
+<h2>21. Show or Hide Password | PROJECT</h2>
+
+```jsx
+
+
+function App() {
+
+  let [pshow, setPshow] = useState(false)
+
+  return (
+    <div>
+      
+         <input type={pshow ? 'text' : 'password'} />
+         <button onClick={() => setPshow(!pshow)}>{pshow ? 'Hide' : 'Show'}</button>
+
+    </div>
+  );
+}
+
+```
 
 
 -------------------------------------------------------------------------------------------------------------------
+
+
+<h2>21. Responsive Menu | PROJECT</h2>
+
 
 
 
