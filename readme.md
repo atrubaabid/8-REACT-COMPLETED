@@ -572,6 +572,52 @@ export default function Header() {
 -------------------------------------------------------------------------------------------------------------------
 
 
+<h2>16. Event Handling</h2>
+
+```jsx
+function App(){
+
+// function 1
+    let hey = () => {
+    alert("Hey")
+  }
+
+// function 2
+    let addData = (a, b) => {
+    alert(`you addition is ${a + b}`)
+  }
+
+  return(
+    <div>
+// When you just call a function, you can use it without parentheses.
+      <button className='bg-red-500 p-[10px] rounded text-white mr-[10px]' onClick={hey}> Save</button>
+
+// When you call a function with its parameter, you can use it like this -> create an arrow function and then call it.
+      <button className='bg-orange-500 p-[10px] rounded text-white' onClick={() => addData(5, 50)}>Save</button>
+
+    </div>
+
+  )
+}
+```
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+<h2>17. HOOKS (Usestate in hooks)</h2>
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
