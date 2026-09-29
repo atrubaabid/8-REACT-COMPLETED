@@ -2,16 +2,26 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import weblogo from './images/logo img.webp'
+import { useState } from 'react';
 
 function App() {
 
+  // let n = 10;
+
+  const [count, setCount] = useState(0)
+
   let hey = () => {
-    alert("Hey")
+    //  n++
+    //  console.log(n);
+    setCount(count+1)
+
   }
 
   let addData = (a, b) => {
     alert(`you addition is ${a + b}`)
   }
+
+
   return (
     <div className="App">
 
@@ -38,6 +48,16 @@ function App() {
       <button className='bg-red-500 p-[10px] rounded text-white mr-[10px]' onClick={hey}> Save</button>
 
       <button className='bg-orange-500 p-[10px] rounded text-white' onClick={() => addData(5, 50)}>Save</button>
+
+
+
+      {/* 17. HOOKS (Usestate in hooks) */}
+
+      {/* {n} */}
+      {count}
+
+
+
 
 
 

@@ -608,7 +608,46 @@ function App(){
 
 <h2>17. HOOKS (Usestate in hooks)</h2>
 
+```js
+let count = 0;
+count = count + 1;
+```
+Value memory mein change ho sakti hai, lekin React automatically UI update nahi karega. isliye ham useState use kerty hyn.<br>
 
+
+**USESTATE** -> Component ke andar aisa data store karna jo change ho sakta hai, aur change hone par UI ko update karna.
+```jsx
+const [state, setState] = useState(initialValue);
+```
+
+**EXAMPLE**
+```jsx
+function App() {
+
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+    </div>
+  );
+}
+```
+**📌Summery** 
+```
+count → Current value.
+
+setCount → Function to update the value.
+
+useState → React Hook.
+
+0 → Initial value.
+```
+
+**In simple words: useState helps us store changing data and automatically update the UI when that data changes.**
 
 -------------------------------------------------------------------------------------------------------------------
 
