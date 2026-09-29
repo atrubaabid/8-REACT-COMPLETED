@@ -653,9 +653,48 @@ useState → React Hook.
 
 <h2>18. Conditional Statement (if-else)</h2>
 
+```jsx
+
+function App() {
+
+  let template = '';
+
+  let [show, setShow] = useState(false)
+
+  if (show) {
+    template = <>
+      <button className='bg-blue-500 text-white p-[10px]' onClick={() => setShow(!show)}>Hide</button>
+      <p className='font-bold'>Atruba</p>
+    </>
+  } else {
+    template = <>
+      <button className='bg-blue-500 text-white p-[10px]' onClick={() => setShow(!show)}>Show</button>
+    </>
+  }
+
+
+  return (
+    <div>
+       <div>{template}</div>
+    </div>
+  );
+}
+
+```
 
 
 -------------------------------------------------------------------------------------------------------------------
+
+
+
+<h2>19. Conditional Statement (if-else)</h2>
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
 
 
 

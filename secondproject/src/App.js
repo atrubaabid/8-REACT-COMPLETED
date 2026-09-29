@@ -6,6 +6,21 @@ import { useState } from 'react';
 
 function App() {
 
+  // 16. Event Handling 
+
+  let hey = () => {
+    alert(`hey`)
+  }
+
+
+  let addData = (a, b) => {
+    alert(`you addition is ${a + b}`)
+  }
+
+
+  // ---------------------------------------------------------------
+
+
   // 17. HOOKS (Usestate in hooks)
 
   // let n = 10;
@@ -20,21 +35,29 @@ function App() {
   }
 
 
-
   // ---------------------------------------------------------------
 
 
+  // 18. Conditional Statement (if-else)
 
-// 16. Event Handling 
+  let template = '';
 
-  let hey = () => {
-    alert(`hey`)
+  let [show, setShow] = useState(false)
+
+  if (show) {
+    template = <>
+      <button className='bg-blue-500 text-white p-[10px]' onClick={() => setShow(!show)}>Hide</button>
+      <p className='font-bold'>Atruba</p>
+    </>
+  } else {
+    template = <>
+      <button className='bg-blue-500 text-white p-[10px]' onClick={() => setShow(!show)}>Show</button>
+    </>
   }
 
 
-  let addData = (a, b) => {
-    alert(`you addition is ${a + b}`)
-  }
+  // ---------------------------------------------------------------
+
 
 
   return (
@@ -79,7 +102,11 @@ function App() {
       </div>
 
 
-      
+      {/* 18. Conditional Statement (if-else) */}
+
+      <div>{template}</div>
+
+
 
 
 
