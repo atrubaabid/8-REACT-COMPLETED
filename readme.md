@@ -486,6 +486,7 @@ usme ye code paste krdo
 ```
 
 **Step 5 — Ab Tailwind test karo ❤️**
+
 ```jsx
 function App() {
   return (
@@ -501,10 +502,33 @@ export default App;
 
 -------------------------------------------------------------------------------------------------------------------
 
-<h3>15. How to import CSS & images in React</h3>
+<h3>14. How to import CSS & images in React</h3>
 
+#####FOR IMPORT CSS
+For example, if you create a **Header.jsx** file and a **Header.css** file to keep the CSS separate for that component, you just need to import the CSS file into your Header.jsx component like this.
 
+**Header.css**
+```css
+.header{
+    width: 100%;
+    padding: 20px;
+    background-color: aqua;
+    color: red;
+}
+```
 
+**Header.jsx**
+```jsx
+import React from 'react'
+import './Header.css'
+
+export default function Header() {
+  return (
+    <div className='header'>Header component</div>
+  )
+}
+
+```
 
 
 -------------------------------------------------------------------------------------------------------------------
