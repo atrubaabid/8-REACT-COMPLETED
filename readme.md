@@ -533,7 +533,9 @@ export default function Header() {
 
 -------------------------------------------------------------------------------------------------------------------
 
-<h3>15. How to import images in React</h3>
+
+
+<h2>15. How to import images in React</h2>
 
 **FOR IMPORT IMAGES**
 If you need to use your own images on your website, you can import them like this.
@@ -554,7 +556,7 @@ import weblogo from './images/logo img.webp'
 export default function Header() {
   return (
     <div>
-    // import from you system
+    // import from your system
       <img width={100} src={weblogo} />
 
     // live link
@@ -564,6 +566,13 @@ export default function Header() {
 }
 
 ```
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
