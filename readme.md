@@ -687,7 +687,26 @@ function App() {
 
 
 
-<h2>19. Conditional Statement (if-else)</h2>
+<h2>19. Ternary Operator</h2>
+
+```jsx
+function App() {
+
+  let [showpara, setShowpara] = useState(false)
+
+  return (
+    <div>
+     
+      <button className='bg-purple-500 text-white p-3 -m-3 mt-6' onClick={() => setShowpara(!showpara)}>{showpara ? 'Hide' : 'Show'}</button>
+
+      {
+        showpara  ?  <p className='max-w-[1200px] bg-purple-500 m-auto p-6 font-bold text-white m-3'>I'm Ternery Opertor</p>   :   ""
+      }
+
+    </div>
+  );
+}
+```
 
 
 
