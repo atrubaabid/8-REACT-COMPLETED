@@ -774,7 +774,6 @@ function App() {
 
 ```jsx
 
-
 function App() {
 
   let [pshow, setPshow] = useState(false)
@@ -795,7 +794,42 @@ function App() {
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h2>21. Responsive Menu | PROJECT</h2>
+<h2>22. Responsive Menu | PROJECT</h2>
+
+```jsx
+
+function App() {
+
+ let [nshow, setNshow] = useState(false)
+
+  return (
+    <div>
+      
+        <ul className={`text-[10px] fixed bg-yellow-400 h-[80%] top-0 left-[-1000px] p-10 duration-[0.5s]  ${nshow ? 'left-[0px]' : ''}`}>
+          <li>Home</li>
+          <li>About</li>
+          <li>Our Team</li>
+          <li>Our Courses</li>
+          <li>Services</li>
+          <li>Contact Us</li>
+        </ul>
+
+        <button onClick={()=>setNshow(!nshow)}>Open Navbar {nshow ? <span className='bg-yellow-300 px-2 py-1 rounded-full'> &times; </span> : <span  className='bg-yellow-300 px-2 py-1 rounded-full'> &#9776; </span>} </button>
+
+    </div>
+  );
+}
+
+```
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+<h2>23. Responsive Menu | PROJECT</h2>
+
+
 
 
 
