@@ -827,7 +827,38 @@ function App() {
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h2>23. Responsive Menu | PROJECT</h2>
+<h2>23. Create Login Modal | PROJECT</h2>
+
+```jsx
+
+function App() {
+
+  let [modalshow, setModalshow] = useState(false)
+
+  return (
+    <div>
+
+    <button onClick={() => setModalshow(true)}>Enquiry Form</button>
+
+    <div className={`w-[100%] h-screen bg-black/50 fixed left-0 top-0 ${modalshow ? 'block' : 'hidden'}`}></div>
+
+    <div className={`pt-[20px] duration-[0.3s] bg-white w-[350px] h-[350px] fixed left-[50%] translate-x-[-50%] translate-y-[-50%] ${modalshow ? 'top-[50%]' : 'top-[-50%]'}`}>Enquiry Now <span className='text-2xl text-red-600 ' onClick={()=>setModalshow(false)}>&times;</span> </div>
+
+    </div>
+  );
+}
+
+```
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+<h2>23. Create FAQ using state | PROJECT</h2>
+
+
+-------------------------------------------------------------------------------------------------------------------
+
 
 
 

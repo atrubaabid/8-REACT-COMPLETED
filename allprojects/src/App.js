@@ -3,9 +3,14 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-
+  // 21. Show or Hide Password | PROJECT
   let [pshow, setPshow] = useState(false)
+  // 22. Responsive Menu | PROJECT
   let [nshow, setNshow] = useState(false)
+  // 23. Create Login Modal | PROJECT
+  let [modalshow, setModalshow] = useState(false)
+
+
   return (
 
     <div className="App">
@@ -45,7 +50,22 @@ function App() {
           <li>Contact Us</li>
         </ul>
 
-        <button onClick={()=>setNshow(!nshow)}>Open Navbar {nshow ? <span className='bg-yellow-300 px-2 py-1 rounded-full'>&times;</span> : <span  className='bg-yellow-300 px-2 py-1 rounded-full'>&#9776;</span>} </button>
+        <button onClick={() => setNshow(!nshow)}>Open Navbar {nshow ? <span className='bg-yellow-300 px-2 py-1 rounded-full'>&times;</span> : <span className='bg-yellow-300 px-2 py-1 rounded-full'>&#9776;</span>} </button>
+
+
+      </div>
+
+      {/* 23. Create Login Modal | PROJECT */}
+
+      <div className='max-w-[1270px] bg-orange-500 p-6 mx-auto mt-3'>
+
+        <h1 className='mb-6 font-bold'>23. Create Login Modal | PROJECT</h1>
+
+        <button className='bg-yellow-300 p-2 rounded' onClick={() => setModalshow(true)}>Enquiry Form</button>
+
+        <div className={` w-[100%] h-screen bg-black/50 fixed left-0 top-0 ${modalshow ? 'block' : 'hidden'}`}></div>
+
+        <div className={`pt-[20px] duration-[0.3s] bg-white w-[350px] h-[350px] fixed left-[50%] translate-x-[-50%] translate-y-[-50%] ${modalshow ? 'top-[50%]' : 'top-[-50%]'}`}>Enquiry Now <span className='text-2xl text-red-600 ' onClick={()=>setModalshow(false)}>&times;</span> </div>
 
 
       </div>
