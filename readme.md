@@ -854,8 +854,34 @@ function App() {
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h2>23. Create FAQ using state | PROJECT</h2>
+<h2>24. Create FAQ using state | PROJECT</h2>
 
+```jsx
+
+function App() {
+
+  let [faqshow, setFaqshow] = useState(questions[0].id)
+
+  return (
+    <div>
+          {questions.map((v, i) => {
+
+            return (
+              <div className='mb-3'>
+
+                <h3 className='bg-yellow-400 text-left ps-[20px] font-bold  py-2 cursor-pointer' onClick={() => setFaqshow(v.id)}>{v.id} {v.title}</h3>
+
+                <p className={`ps-[20px] text-left border-[5px] border-yellow-400 duration-[0.5s] transition-all  overflow-hidden ${faqshow == v.id ? 'h-auto opacity-100 translate-y-0 py-3' : 'h-0 translate-y-[-40px] opacity-0 '}`}>{v.body}</p>
+              </div>
+            )
+
+          })}
+
+    </div>
+  );
+}
+
+```
 
 -------------------------------------------------------------------------------------------------------------------
 

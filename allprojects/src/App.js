@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import { questions } from './Data/question';
 
 function App() {
   // 21. Show or Hide Password | PROJECT
@@ -9,6 +10,9 @@ function App() {
   let [nshow, setNshow] = useState(false)
   // 23. Create Login Modal | PROJECT
   let [modalshow, setModalshow] = useState(false)
+  // 24. Create FAQ using state | PROJECT 
+  let [faqshow, setFaqshow] = useState(questions[0].id)
+
 
 
   return (
@@ -55,6 +59,8 @@ function App() {
 
       </div>
 
+
+
       {/* 23. Create Login Modal | PROJECT */}
 
       <div className='max-w-[1270px] bg-orange-500 p-6 mx-auto mt-3'>
@@ -65,10 +71,35 @@ function App() {
 
         <div className={` w-[100%] h-screen bg-black/50 fixed left-0 top-0 ${modalshow ? 'block' : 'hidden'}`}></div>
 
-        <div className={`pt-[20px] duration-[0.3s] bg-white w-[350px] h-[350px] fixed left-[50%] translate-x-[-50%] translate-y-[-50%] ${modalshow ? 'top-[50%]' : 'top-[-50%]'}`}>Enquiry Now <span className='text-2xl text-red-600 ' onClick={()=>setModalshow(false)}>&times;</span> </div>
+        <div className={`pt-[20px] duration-[0.3s] bg-white w-[350px] h-[350px] fixed left-[50%] translate-x-[-50%] translate-y-[-50%] ${modalshow ? 'top-[50%]' : 'top-[-50%]'}`}>Enquiry Now <span className='text-2xl text-red-600 ' onClick={() => setModalshow(false)}>&times;</span> </div>
 
 
       </div>
+
+      {/* 24. Create FAQ using state | PROJECT */}
+
+      <div className='max-w-[1270px] bg-orange-500 p-6 mx-auto mt-3'>
+        <h1 className='mb-6 font-bold'>24. Create FAQ using state | PROJECT</h1>
+
+        <div>
+          {questions.map((v, i) => {
+
+            return (
+              <div className='mb-3'>
+
+                <h3 className='bg-yellow-400 text-left ps-[20px] font-bold  py-2 cursor-pointer' onClick={() => setFaqshow(v.id)}>{v.id} {v.title}</h3>
+
+                <p className={`ps-[20px] text-left border-[5px] border-yellow-400 duration-[0.5s] transition-all  overflow-hidden ${faqshow == v.id ? 'h-auto opacity-100 translate-y-0 py-3' : 'h-0 translate-y-[-40px] opacity-0 '}`}>{v.body}</p>
+              </div>
+            )
+
+          })}
+
+        </div>
+
+
+      </div>
+
 
 
     </div>
