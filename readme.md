@@ -976,7 +976,7 @@ function Items({ itemdetail }) {
 key prop gives each list item a unique identity so React can efficiently track, add, remove, or update items.
 
 - Think of it like a student ID number. Every student has a different ID, so the school can easily identify each student. Similarly, React uses key to identify each list item.
-- 
+
 
 ```jsx
 function App() {
