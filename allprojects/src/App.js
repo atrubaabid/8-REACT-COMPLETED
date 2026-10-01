@@ -87,7 +87,7 @@ function App() {
           {questions.map((v, i) => {
 
             return (
-              <div className='mb-3'>
+              <div className='mb-3' key={i}>
 
                 <h3 className='bg-yellow-400 text-left ps-[20px] font-bold  py-2 cursor-pointer' onClick={() => setFaqshow(v.id)}>{v.id} {v.title}</h3>
 
@@ -103,7 +103,7 @@ function App() {
       </div>
 
       {/* 25. Create FAQ with Props Drilling | PROJECT */}
-      
+
       <Faqproject/>
 
      

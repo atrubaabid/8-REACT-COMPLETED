@@ -15,7 +15,7 @@ export default function Faqproject() {
             setFaqshow
         }
         return (
-            <Items itemdetail={itemdetail} />
+            <Items itemdetail={itemdetail} key={i}/>
         )
     })
 

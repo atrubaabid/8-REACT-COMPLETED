@@ -891,6 +891,7 @@ function App() {
 <h2>25. Create FAQ with Props Drilling | PROJECT</h2>
 
 **App.js**
+
 ```jsx
 import Faqproject from './Faqproject';
 
@@ -908,8 +909,8 @@ function App() {
 ```
 
 **Faqproject.jsx**
-```jsx
 
+```jsx
 import React from 'react'
 import { useState } from 'react';
 import { questions } from './Data/question';
@@ -927,7 +928,7 @@ export default function Faqproject() {
             setFaqshow
         }
         return (
-            <Items itemdetail={itemdetail} />
+            <Items itemdetail={itemdetail} key={i}/>
         )
     })
 
@@ -963,7 +964,6 @@ function Items({ itemdetail }) {
         </div>
     )
 }
-
 
 ```
 
