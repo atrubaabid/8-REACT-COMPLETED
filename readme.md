@@ -928,7 +928,7 @@ export default function Faqproject() {
             setFaqshow
         }
         return (
-            <Items itemdetail={itemdetail} key={i}/>
+            <Items itemdetail={itemdetail} key={item.id}/>
         )
     })
 
@@ -972,6 +972,49 @@ function Items({ itemdetail }) {
 
 
 <h2>26. What is Key Prop in React JS & its Importance</h2>
+
+key prop gives each list item a unique identity so React can efficiently track, add, remove, or update items.
+
+- Think of it like a student ID number. Every student has a different ID, so the school can easily identify each student. Similarly, React uses key to identify each list item.
+- 
+
+```jsx
+function App() {
+
+  const users = [
+  { id: 101, name: "Ali" },
+  { id: 102, name: "Sara" },
+  { id: 103, name: "Ahmed" }
+];
+
+  return (
+    <div>
+
+       {users.map((user) => {
+            return (
+              <p key={user.id}>{user.name}</p>
+            )
+          })}
+
+    </div>
+  );
+}
+
+```
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+<h2>27. What is Key Prop in React JS & its Importance</h2>
+
+
+
+
+
 
 
 

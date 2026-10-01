@@ -14,6 +14,12 @@ function App() {
   let [modalshow, setModalshow] = useState(false)
   // 24. Create FAQ using state | PROJECT 
   let [faqshow, setFaqshow] = useState(questions[0].id)
+  // 26. What is Key Prop in React JS & its Importance
+  const users = [
+    { id: 101, name: "Ali" },
+    { id: 102, name: "Sara" },
+    { id: 103, name: "Ahmed" }
+  ];
 
 
 
@@ -87,7 +93,7 @@ function App() {
           {questions.map((v, i) => {
 
             return (
-              <div className='mb-3' key={i}>
+              <div className='mb-3' key={v.id}>
 
                 <h3 className='bg-yellow-400 text-left ps-[20px] font-bold  py-2 cursor-pointer' onClick={() => setFaqshow(v.id)}>{v.id} {v.title}</h3>
 
@@ -104,9 +110,29 @@ function App() {
 
       {/* 25. Create FAQ with Props Drilling | PROJECT */}
 
-      <Faqproject/>
+      <Faqproject />
 
-     
+
+      {/* 26. What is Key Prop in React JS & its Importance */}
+
+      <div className='max-w-[1270px] bg-orange-500 p-6 mx-auto mt-3'>
+
+        <h1 className='mb-6 font-bold'>26. What is Key Prop in React JS & its Importance</h1>
+
+
+        <div className='bg-yellow-400'>
+          
+          {users.map((user) => {
+            return (
+              <p key={user.id}>{user.name}</p>
+            )
+          })}
+
+        </div>
+
+      </div>
+
+
 
 
 
