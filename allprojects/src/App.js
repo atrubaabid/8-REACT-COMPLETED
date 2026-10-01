@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import { questions } from './Data/question';
+import Faqproject from './Faqproject';
+
 
 function App() {
   // 21. Show or Hide Password | PROJECT
@@ -99,6 +101,14 @@ function App() {
 
 
       </div>
+
+      {/* 25. Create FAQ with Props Drilling | PROJECT */}
+      
+      <Faqproject/>
+
+     
+
+
 
 
 
