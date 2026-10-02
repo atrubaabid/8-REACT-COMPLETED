@@ -3,6 +3,8 @@ import './App.css';
 import { useState } from 'react';
 import { questions } from './Data/question';
 import Faqproject from './Faqproject';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 
 function App() {
@@ -21,6 +23,13 @@ function App() {
     { id: 103, name: "Ahmed" }
   ];
 
+  // 27. react-hot-toast Notification Component
+
+  let showNotification = () => {
+    toast.success('Success Message')
+    // toast.error('Something went wrong!');
+    // toast('Be careful! ⚠️');
+  }
 
 
   return (
@@ -115,22 +124,37 @@ function App() {
 
       {/* 26. What is Key Prop in React JS & its Importance */}
 
-      <div className='max-w-[1270px] bg-orange-500 p-6 mx-auto mt-3'>
+      <div className='max-w-[1270px] bg-cyan-400  p-6 mx-auto mt-3'>
 
         <h1 className='mb-6 font-bold'>26. What is Key Prop in React JS & its Importance</h1>
 
 
         <div className='bg-yellow-400'>
-          
+
           {users.map((user) => {
             return (
-              <p key={user.id}>{user.name}</p>
+              <p key={user.id}> {user.id} {user.name}</p>
             )
           })}
 
         </div>
 
       </div>
+
+
+      {/* 27. react-hot-toast Notification Component */}
+
+      <div className='max-w-[1270px] bg-cyan-400 p-6 mx-auto mt-3'>
+        <h1 className='mb-6 font-bold'>27. react-hot-toast Notification Component</h1>
+
+        <button onClick={showNotification} className='bg-yellow-400 py-[5px] px-[15px] rounded'>Save</button>
+
+        <Toaster />
+
+      </div>
+
+
+
 
 
 

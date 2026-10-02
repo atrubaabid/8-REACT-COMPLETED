@@ -1008,8 +1008,64 @@ function App() {
 
 
 
+<h2>27. react-hot-toast Notification Component</h2>
 
-<h2>27. What is Key Prop in React JS & its Importance</h2>
+**1. Install karo**
+
+```
+npm install react-hot-toast
+```
+
+**2. Import karo**
+in your App.js file
+
+```
+import toast, { Toaster } from 'react-hot-toast';
+```
+
+- toast → notification show karne ke liye
+- Toaster → notifications ko screen par display karne ke liye
+
+**3. Simple example**
+
+```jsx
+import toast, { Toaster } from 'react-hot-toast';
+
+function App() {
+
+  let showNotification = () => {
+    toast.success('Success message');
+    // toast.error('Something went wrong!');
+    // toast('Be careful! ⚠️');
+  };
+
+  return (
+    <>
+      <button onClick={showNotification}>
+        Show Notification
+      </button>
+
+      <Toaster />
+    </>
+  );
+}
+
+export default App;
+```
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+<h2>28. Building a TODO List App | PROJECT</h2>
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+  
+
 
 
 

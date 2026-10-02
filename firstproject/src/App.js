@@ -43,6 +43,9 @@ function App() {
 
       <h1 className='main'>{myname}</h1>
 
+      
+
+
 
       {/* 7. React Components */}
 
@@ -60,6 +63,10 @@ function App() {
 
       </div>
       <Footer />
+
+
+
+
 
 
       {/* 8. Setup + Adding Bootstrap in React */}
@@ -81,9 +88,16 @@ function App() {
 
       </div>
 
+
+
+
+
       {/* 9. Understanding Props */}
 
       <Props email="example@gmail.com" phone="123456" obj={obj} />
+
+
+
 
 
       {/* 10. Using Children Props */}
@@ -91,6 +105,9 @@ function App() {
       <ChildrenProps>
         <h1>This is a Children Props</h1>
       </ChildrenProps>
+
+
+
 
 
       {/* 11. How to pass Object to child Components */}
@@ -103,6 +120,10 @@ function App() {
           )
         })}
       </div>
+
+
+
+      
 
       {/* 12. How to Add Font Awesome Icon */}
 
