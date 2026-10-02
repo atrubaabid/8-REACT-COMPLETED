@@ -5,6 +5,7 @@ import { questions } from './Data/question';
 import Faqproject from './Faqproject';
 import toast, { Toaster } from 'react-hot-toast';
 import Todolist from './Todolist';
+import Tabbing from './Tabbing';
 
 
 
@@ -162,7 +163,9 @@ function App() {
 
       {/* 29. Create Tabbing | PROJECT */}
 
-      
+      <Tabbing />
+
+
     </div>
   );
 }
