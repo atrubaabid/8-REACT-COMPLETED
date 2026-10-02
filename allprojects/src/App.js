@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { questions } from './Data/question';
 import Faqproject from './Faqproject';
 import toast, { Toaster } from 'react-hot-toast';
+import Todolist from './Todolist';
+
 
 
 
@@ -154,14 +156,13 @@ function App() {
       </div>
 
 
+      {/* 28. Building a TODO List App | PROJECT */}
 
+      <Todolist />
 
+      {/* 29. Create Tabbing | PROJECT */}
 
-
-
-
-
-
+      
     </div>
   );
 }
