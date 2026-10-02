@@ -1073,6 +1073,10 @@ you can see all the code on **allprojects/src/Todolist.jsx**
 -------------------------------------------------------------------------------------------------------------------
 
 
+<h2>30. Adding a Static Routing with link</h2>
+
+
+
 
 
 

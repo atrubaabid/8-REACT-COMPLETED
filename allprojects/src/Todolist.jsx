@@ -64,6 +64,8 @@ export default function Todolist() {
 // LIST COMPONENT
 function List({ item, indexNumber, todolist, setTodolist }) {
 
+
+    // DELETE FUNCTION
     let deleterow = (event) => {
         event.stopPropagation();
         let filtereditems = todolist.filter((item, i) =>
