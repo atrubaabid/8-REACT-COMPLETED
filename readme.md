@@ -1080,7 +1080,7 @@ you can see all the code on **allprojects/src/Tabbing.jsx**
 
 <h2>30. Adding a Static Routing with link</h2>
 
-**Routing ->** Routing means moving from one page/component to another without refreshing the whole website.
+ - **Routing ->** Routing means moving from one page/component to another without refreshing the whole website.
 
 - For example, your website has:
   
@@ -1093,7 +1093,7 @@ you can see all the code on **allprojects/src/Tabbing.jsx**
 When you click About, React shows the About component.
 
 
-**Static Routing ->** Static routing means the routes are fixed/hard-coded in your React application.
+ - **Static Routing ->** Static routing means the routes are fixed/hard-coded in your React application.
 
 ```
 /          →   Home
