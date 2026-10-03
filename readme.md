@@ -1080,6 +1080,97 @@ you can see all the code on **allprojects/src/Tabbing.jsx**
 
 <h2>30. Adding a Static Routing with link</h2>
 
+**Routing ->** Routing means moving from one page/component to another without refreshing the whole website.
+
+- For example, your website has:
+  
+```
+      Home
+      About
+      Contact
+      Blog
+```
+When you click About, React shows the About component.
+
+
+**Static Routing ->** Static routing means the routes are fixed/hard-coded in your React application.
+
+```
+/          →   Home
+/about     →   About
+/contact   →   Contact
+```
+
+### 1. Install React Router
+```
+npm install react-router-dom
+```
+
+### 2. Create Components
+```
+Home.jsx
+About.jsx
+Contact.jsx
+```
+
+### 3. Create Routes in index.js file
+
+```jsx
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Routes
+let allRoutes = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>
+  },
+  {
+    path: "/about",
+    element: <About/>
+  },
+  {
+    path: "/contact",
+    element: <Contact/>
+  }
+])
+
+root.render(
+  <React.StrictMode>
+   <RouterProvider router={allRoutes}/>
+  </React.StrictMode>
+);
+```
+
+### 4. Add Navigation in Header.jsx Component
+
+Actually, instead of adding the header manually, I created a Header component and called it on all the pages that I added as routes.
+
+```jsx
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+export default function Header() {
+    return (
+        <div>
+            <center>
+                <h1>Static Routing</h1>
+
+                <div> <Link to={"/"}>Home</Link > </div>
+                <div> <Link to={"/about"}>About</Link ></div>
+                <div> <Link to={"/contact"}>Contact</Link ></div>
+
+            </center >
+        </div>
+    )
+}
+
+```
+
 
 
 -------------------------------------------------------------------------------------------------------------------
