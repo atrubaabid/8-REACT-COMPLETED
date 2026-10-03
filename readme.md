@@ -1082,7 +1082,7 @@ you can see all the code on **allprojects/src/Tabbing.jsx**
 
  - **Routing ->** Routing means moving from one page/component to another without refreshing the whole website.
 
-- For example, your website has:
+  For example, your website has:
   
 ```
       Home
