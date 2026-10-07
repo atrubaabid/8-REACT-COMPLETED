@@ -1210,7 +1210,7 @@ you can watch all the Code on  **Myblog.jsx** , **BlogDetails.jsx** on the **rou
 
 A 404 page is shown when the user visits a URL that does not exist on our website. <br>
 
-For Example:
+**For Example:**
 ```
 /about       → exists ✅
 /contact     → exists ✅
@@ -1218,15 +1218,18 @@ For Example:
 ```
 Instead of showing a blank page or error, we show a friendly "Page Not Found" page Like This. <br>
 
-For Example:
+**For Example:**
 ```
 {
   path: "*",
   element: <Error404/>
 }
+
+
+*   -->   means any URL that doesn't match the routes above show this component.
+<Error404 />  -->   means show the Error404 component.
 ```
-- * means any URL that doesn't match the routes above show this component.
-- <Error404 /> means show the Error404 component.
+
 
 
 -------------------------------------------------------------------------------------------------------------------
