@@ -1370,6 +1370,14 @@ function App() {
 }
 ```
 
+**Different types**
+```jsx
+toast.success("Successfully saved!");
+toast.error("Something went wrong!");
+toast.warning("Please check your input!");
+toast.info("This is some information.");
+```
+
 
 -------------------------------------------------------------------------------------------------------------------
 

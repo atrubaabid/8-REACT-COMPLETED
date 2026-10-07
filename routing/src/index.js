@@ -10,6 +10,7 @@ import Contact from './Pages/Contact';
 import Myblog from './Pages/Myblog';
 import BlogDetails from './Pages/BlogDetails';
 import Error404 from './Pages/Error404';
+import Form from './Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allRoutes = createBrowserRouter([
@@ -35,7 +36,11 @@ let allRoutes = createBrowserRouter([
   },
   {
     path: "*",
-    element: <Error404/>
+    element: <Error404 />
+  },
+  {
+    path: "form",
+    element: <Form/>
   }
 ])
 
