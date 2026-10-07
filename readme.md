@@ -1187,7 +1187,7 @@ let allRoutes = createBrowserRouter([
     path: "blog",
     element: <Myblog />
   },
-      {
+  {
     path: "blog/:id",
     element: <BlogDetails/>
   }
@@ -1199,7 +1199,7 @@ let allRoutes = createBrowserRouter([
  <Link to={`/blog/${items.id}`}><button>Read More</button></Link>
 ```
 
-you can watch all the Code on  **Myblog.jsx** , **BlogDetails.jsx** on the routing folder.
+you can watch all the Code on  **Myblog.jsx** , **BlogDetails.jsx** on the **routing folder**.
 
 
 

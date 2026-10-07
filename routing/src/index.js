@@ -28,9 +28,9 @@ let allRoutes = createBrowserRouter([
     path: "blog",
     element: <Myblog />
   },
-      {
+  {
     path: "blog/:id",
-    element: <BlogDetails/>
+    element: <BlogDetails />
   }
 ])
 
