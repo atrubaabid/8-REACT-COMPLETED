@@ -1260,7 +1260,7 @@ import React, { useState } from 'react'
 
     return (
         <div>
-        
+
             <div className='form'>
 
                 <form onSubmit={handleform}>
@@ -1301,6 +1301,91 @@ import React, { useState } from 'react'
 
 
 -------------------------------------------------------------------------------------------------------------------
+
+
+
+<h2>35. Show User Data from State in Table Tag</h2>
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+<h2>36. Email or Phone Number already exist</h2>
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+<h2>37. Delete Row in User Data State</h2>
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+<h2>38. React-Toastify</h2>
+
+**Step 1  ->  install**
+```
+npm i react-toastify
+```
+
+**Step 2  ->  add this CSS link on your file**
+```
+import 'react-toastify/dist/ReactToastify.css';
+```
+
+**Step 3  ->  import ToastContainer**
+
+```jsx
+import { ToastContainer } from 'react-toastify';
+
+function App() {
+  return (
+    <>
+      <ToastContainer />
+      {/* your app */}
+    </>
+  );
+}
+```
+
+**Step 4  ->  import toast**
+
+```jsx
+import { toast } from 'react-toastify';
+
+function App() {
+  return (
+    <>
+      <ToastContainer />
+     <button onClick={() => toast("Hello!")}>
+         Click Me
+     </button>
+    </>
+  );
+}
+```
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+```
+⭐ Dot . = fixed key
+⭐ Square brackets [] = dynamic key
+```
+
+```
+Path	              Meaning
+./	                Current folder
+../	                1 folder back
+../../            	2 folders back
+
+```
 
 
 
