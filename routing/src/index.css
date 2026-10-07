@@ -58,3 +58,20 @@ h1 {
   }
 
 }
+
+.form {
+  max-width: 1320px;
+  background-color: aqua;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+  padding-block: 2rem;
+ 
+
+  & form {
+    & div {
+      margin-bottom: 10px;
+     
+    }
+  }
+}

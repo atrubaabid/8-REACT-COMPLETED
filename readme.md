@@ -1237,12 +1237,66 @@ Instead of showing a blank page or error, we show a friendly "Page Not Found" pa
 
 <h2>33. Controlled Components Input</h2>
 
+**Controlled Component = Input + React State ✅**
+In React, a controlled input is an input whose value is controlled by React state. React state keeps track of what the user types in the input.
+
+```jsx
+import React, { useState } from 'react'
+
+ function App() {
+    let [username, setUsername] = useState('');
+    let [password, setPassword] = useState('');
+
+    let handleform = (e) => {
+        e.preventDefault()
+        
+        // console.log(e.target.ii.value);
+        // console.log(e.target.ee.value);
+
+        console.log(username, password);
+
+    }
+
+
+    return (
+        <div>
+        
+            <div className='form'>
+
+                <form onSubmit={handleform}>
+
+                    <div>
+                        <label>Username <br />
+                            <input type='text' value={username} onChange={(e) => setUsername(e.target.value)} name='ii' />
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>Password <br />
+                            <input type='text' value={password} onChange={(e) => setPassword(e.target.value)} name='ee' />
+                        </label>
+                    </div>
+
+                    <div>
+                        <button>Save</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    )
+}
+
+```
+
+
+
 
 
 -------------------------------------------------------------------------------------------------------------------
 
 
-<h2>33. Enquiry Form Handle with State Using Controlled Components</h2>
+<h2>34. Enquiry Form Handle with State Using Controlled Components</h2>
 
 
 
