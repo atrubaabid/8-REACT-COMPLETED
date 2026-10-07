@@ -6,9 +6,7 @@ export default function Form() {
   return (
     <div>
         <Header/>
-        <ToastContainer/>
-
-        <button onClick={()=> toast.error("Atruba")}>save</button>
+      
         
 
     </div>

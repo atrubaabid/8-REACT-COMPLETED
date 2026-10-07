@@ -12,12 +12,12 @@ export default function BlogDetails() {
     return (
       (currentID == item.id)
     )
-  })
+  })[0]
 
-  let obj = currentBlog[0];
+  console.log(currentBlog);
+  
 
-  console.log(obj);
-
+  // let obj = currentBlog[0];
 
 
   return (
@@ -26,8 +26,8 @@ export default function BlogDetails() {
 
       <div className='container'>
 
-        <h1>{obj.id} {obj.title}</h1>
-        <p>{obj.body}</p>
+        <h1>{currentBlog.id} {currentBlog.title}</h1>
+        <p>{currentBlog.body}</p>
 
       </div>
     </div>
