@@ -12,6 +12,49 @@ code {
     monospace;
 }
 
-h1{
+h1 {
   text-align: center;
+}
+
+.container {
+  max-width: 1320px;
+  background-color: aqua;
+  margin-inline: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-block: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+
+.Card {
+  background-color: burlywood;
+  width: 200px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  & p {
+    flex-grow: 1;
+  }
+
+  & a {
+    width: 100%;
+    padding-block: 5px;
+    background-color: white;
+    border-radius: 20px;
+
+
+    & button {
+      text-decoration: none;
+      color: rgb(108, 61, 0);
+      border: none;
+      background-color: white;
+    }
+  }
+
 }

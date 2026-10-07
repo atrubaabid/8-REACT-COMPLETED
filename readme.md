@@ -1130,11 +1130,11 @@ let allRoutes = createBrowserRouter([
     element: <Home/>
   },
   {
-    path: "/about",
+    path: "about",
     element: <About/>
   },
   {
-    path: "/contact",
+    path: "contact",
     element: <Contact/>
   }
 ])
@@ -1178,9 +1178,40 @@ export default function Header() {
 
 <h2>31. Dynamic Routes</h2>
 
+**ROUTES**
+```jsx
+
+let allRoutes = createBrowserRouter([
+  
+  {
+    path: "blog",
+    element: <Myblog />
+  },
+      {
+    path: "blog/:id",
+    element: <BlogDetails/>
+  }
+])
+```
+
+**NAVIGATION**
+```jsx
+ <Link to={`/blog/${items.id}`}><button>Read More</button></Link>
+```
+
+you can watch all the Code on  **Myblog.jsx** , **BlogDetails.jsx** on the routing folder.
+
 
 
 -------------------------------------------------------------------------------------------------------------------
+
+
+<h2>32. How to Setup 404 Page in React Routing</h2>
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
