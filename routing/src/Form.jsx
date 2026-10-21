@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from './Common/Header'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import { type } from '@testing-library/user-event/dist/type';
 
 
 export default function Form() {
@@ -16,6 +17,8 @@ export default function Form() {
     index: "",
   });
 
+
+
   let [allUserData, setAllUserData] = useState([]);
 
 
@@ -28,32 +31,79 @@ export default function Form() {
   }
 
 
+
+
   let handleform = (e) => {
     e.preventDefault();
 
-    let currentUserData = { ...userData };
 
-    // 36. Email or Phone Number already exist
-    let checkEmailandPhone = allUserData.filter((obj) => obj.email == currentUserData.email || obj.phone == currentUserData.phone);
-    if (checkEmailandPhone.length == 1) {
-      toast.error("Email or Phone number already Exist");
+    if (userData.index === "") {
+
+      // 36. Email or Phone Number already exist
+      let checkEmailandPhone = allUserData.filter((obj) => obj.email == userData.email || obj.phone == userData.phone);
+      if (checkEmailandPhone.length == 1) {
+        toast.error("Email or Phone number already Exist");
+      } else {
+
+        setAllUserData([...allUserData, { ...userData }]);
+        toast.success("Your Information Successfully saved!");
+
+        setUserData(
+          {
+            username: "",
+            email: "",
+            phone: "",
+            message: "",
+            index: "",
+          }
+        )
+
+      }
     } else {
 
-      setAllUserData([...allUserData, currentUserData]);
-      toast.success("Your Information Successfully saved!");
+      let checkEmailandPhone = allUserData.filter((obj, i) => (obj.email == userData.email || obj.phone == userData.phone) && i != userData.index);
 
-      setUserData(
-        {
-          username: "",
-          email: "",
-          phone: "",
-          message: "",
-          index: "",
+      if (checkEmailandPhone == '') {
+
+
+        let editData = userData.index;
+        let oldData = [...allUserData];
+        oldData[editData] = {
+          username: userData.username,
+          email: userData.email,
+          phone: userData.phone,
+          message: userData.message,
         }
-      )
 
+        setAllUserData(oldData);
+
+        setUserData(
+          {
+            username: "",
+            email: "",
+            phone: "",
+            message: "",
+            index: "",
+          }
+        )
+
+        toast.success("Your Information Successfully Updated!")
+
+      } else {
+        toast.error("Email or Phone number already Exist");
+
+      }
     }
+
   }
+
+
+
+
+
+
+
+
 
   // 37. Delete Row in User Data State
   let deleteRow = (indexNumber) => {
@@ -64,12 +114,18 @@ export default function Form() {
 
 
   // 38. Update UserRow in User Data State
+  let updateRow = (indexNumber) => {
+    let editData = allUserData.filter((obj, i) => i == indexNumber)[0];
+    editData['index'] = indexNumber;
+    setUserData(editData);
+
+  }
 
 
 
   return (
     <div>
-      <ToastContainer/>
+      <ToastContainer />
       <Header />
       <h1>FORM</h1>
 
@@ -137,7 +193,7 @@ export default function Form() {
                       <td>{obj.phone}</td>
                       <td>{obj.message}</td>
                       <td>
-                        <button>Update</button>
+                        <button onClick={() => updateRow(i)}>Update</button>
                         <button onClick={() => deleteRow(i)}>Delete</button>
                       </td>
                     </tr>)
