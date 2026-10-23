@@ -9,7 +9,7 @@ export default function Header() {
 
                 <div> <Link to={"/"}>Home</Link > </div>
                 <div> <Link to={"/about"}>About</Link ></div>
-                <div> <Link to={"/contact"}>Contact</Link ></div>
+                <div> <Link to={"/contact"}>Password Generator App</Link ></div>
                 <div> <Link to={"/form"}>Form</Link ></div>
                 <h1>Dynamic Routing</h1>
                 <div> <Link to={"/blog"}>Blog</Link ></div>
