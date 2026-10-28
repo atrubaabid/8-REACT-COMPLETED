@@ -1292,25 +1292,11 @@ import React, { useState } from 'react'
 
 
 
-
--------------------------------------------------------------------------------------------------------------------
-
-<h2>34. Form   | PROJECT</h2>
-
-- 1. Enquiry Form Handle with State Using Controlled Components
-- 2. Show User Data from State in Table Tag
-- 3. Email or Phone Number already exist
-- 4. Delete Row in User Data State
-- 5. Update UserRow in User Data State
-
-for watch all the form procedure go to **Routing >> Form.jsx**
-
-
 -------------------------------------------------------------------------------------------------------------------
 
 
 
-<h2>35. React-Toastify</h2>
+<h2>34. React-Toastify</h2>
 
 **Step 1  ->  install**
 ```
@@ -1361,6 +1347,19 @@ toast.error("Something went wrong!");
 toast.warning("Please check your input!");
 toast.info("This is some information.");
 ```
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+<h2>35. Form   | PROJECT</h2>
+
+- 1. Enquiry Form Handle with State Using Controlled Components
+- 2. Show User Data from State in Table Tag
+- 3. Email or Phone Number already exist
+- 4. Delete Row in User Data State
+- 5. Update UserRow in User Data State
+
+for watch all the form procedure go to **Routing >> Form.jsx**
 
 
 -------------------------------------------------------------------------------------------------------------------
