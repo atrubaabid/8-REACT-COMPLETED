@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../Common/Header'
 
 
@@ -8,13 +8,23 @@ export default function Home() {
 
     let handleform = (e) => {
         e.preventDefault()
-        
+
         // console.log(e.target.ii.value);
         // console.log(e.target.ee.value);
 
         console.log(username, password);
 
     }
+
+
+    // =====================================================================================================
+
+    let [count, setCount] = useState(1);
+
+    useEffect(() => {
+        console.log(count);
+    }, [count])
+
 
 
     return (
@@ -40,6 +50,13 @@ export default function Home() {
                         <button>Save</button>
                     </div>
                 </form>
+            </div>
+
+
+            {/* useEffect */}
+            <div>
+                {count}
+                <button onClick={() => setCount(count + 1)}>addtheCount</button>
             </div>
 
         </div>

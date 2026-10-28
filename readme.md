@@ -1378,6 +1378,50 @@ for watch all the  procedure go to **Routing >> About.jsx**
 
 <h2>38. HOOKS (UseEffect in hooks)</h2>
 
+useEffect React ka ek Hook hai jo component mein rendering ke baad kisi extra kaam ko perform karne ke liye use hota hai.
+
+Examples:
+- API se data lena.
+- Page load hone par koi kaam karna.
+- Timer chalana.
+- Browser ke kisi event ko handle karna.
+
+**Case 1: Without Dependency array**
+```jsx
+useEffect(() => {
+    console.log("Rendered");
+});
+```
+useEffect mein dependency array([]) nahi dety, to woh har render ke baad chalega.
+
+
+**Case 2: Empty dependency array []**
+```jsx
+useEffect(() => {
+    console.log("Hello");
+}, []);
+```
+page reload hony k bad just 1 time run hoga
+
+**Case 3: Dependency array mein variable**
+```jsx
+ let [count, setCount] = useState(1);
+
+useEffect(() => {
+    console.log("City changed");
+}, [count]);
+
+return(
+  <div>
+     {count}
+      <button onClick={() => setCount(count+1)}>addtheCount</button>
+  </div>
+
+)
+```
+- Page pehli baar load hoga → ✅ useEffect chalega.
+- count ki value change hogi → ✅ useEffect dobara chalega.
+- Koi doosri state change hogi, lekin count same rahega → ❌ useEffect dobara nahi chalega.
 
 
 
