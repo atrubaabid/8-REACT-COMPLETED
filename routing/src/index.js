@@ -11,6 +11,7 @@ import Myblog from './Pages/Myblog';
 import BlogDetails from './Pages/BlogDetails';
 import Error404 from './Pages/Error404';
 import Form from './Form';
+import Ecommerce from './Ecommerce';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allRoutes = createBrowserRouter([
@@ -40,7 +41,11 @@ let allRoutes = createBrowserRouter([
   },
   {
     path: "form",
-    element: <Form/>
+    element: <Form />
+  },
+  {
+    path: "ecommerce",
+    element: <Ecommerce/>
   }
 ])
 
