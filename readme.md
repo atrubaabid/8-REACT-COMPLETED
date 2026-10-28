@@ -1295,12 +1295,13 @@ import React, { useState } from 'react'
 
 -------------------------------------------------------------------------------------------------------------------
 
+<h2>34. Form   | PROJECT</h2>
 
-<h2>34. Enquiry Form Handle with State Using Controlled Components</h2>
-<h2>35. Show User Data from State in Table Tag</h2>
-<h2>36. Email or Phone Number already exist</h2>
-<h2>37. Delete Row in User Data State</h2>
-<h2>38. Update UserRow in User Data State</h2>
+- 1. Enquiry Form Handle with State Using Controlled Components
+- 2. Show User Data from State in Table Tag
+- 3. Email or Phone Number already exist
+- 4. Delete Row in User Data State
+- 5. Update UserRow in User Data State
 
 for watch all the form procedure go to **Routing >> Form.jsx**
 
@@ -1309,7 +1310,7 @@ for watch all the form procedure go to **Routing >> Form.jsx**
 
 
 
-<h2>39. React-Toastify</h2>
+<h2>35. React-Toastify</h2>
 
 **Step 1  ->  install**
 ```
@@ -1363,13 +1364,31 @@ toast.info("This is some information.");
 
 
 -------------------------------------------------------------------------------------------------------------------
+
+<h2>36. Password Generator App  |  PROJECT</h2>
+for watch all the  procedure go to **Routing >> Contact.jsx**
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+<h2>37. Whether App Using fetch API |  PROJECT</h2>
+for watch all the  procedure go to **Routing >> About.jsx**
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+<h2>38. HOOKS (UseEffect in hooks)</h2>
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
 
 
-```
-⭐ Dot . = fixed key
-⭐ Square brackets [] = dynamic key
-```
+
 
 ```
 Path	              Meaning
