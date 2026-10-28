@@ -11,8 +11,9 @@ export default function About() {
         let city = e.target.cityname.value;
 
         setIsloading(true);
+        let myAPI = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=YOUR_API_KEY&units=metric`;
 
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=66f9d5eb1020e310d0f0374665c61254&units=metric`)
+        fetch(myAPI)
             .then((res) => {
                 return res.json();
             }).then((data) => {

@@ -1353,11 +1353,11 @@ toast.info("This is some information.");
 
 <h2>35. Form   | PROJECT</h2>
 
-- 1. Enquiry Form Handle with State Using Controlled Components
-- 2. Show User Data from State in Table Tag
-- 3. Email or Phone Number already exist
-- 4. Delete Row in User Data State
-- 5. Update UserRow in User Data State
+ 1. Enquiry Form Handle with State Using Controlled Components
+ 2. Show User Data from State in Table Tag
+ 3. Email or Phone Number already exist
+ 4. Delete Row in User Data State
+ 5. Update UserRow in User Data State
 
 for watch all the form procedure go to **Routing >> Form.jsx**
 
