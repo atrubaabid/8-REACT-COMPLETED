@@ -1392,10 +1392,10 @@ useEffect(() => {
     console.log("Rendered");
 });
 ```
-useEffect mein dependency array([]) nahi dety, to woh har render ke baad chalega.
+useEffect mein dependency array([ ]) nahi dety, to woh har render ke baad chalega.
 
 
-**Case 2: Empty dependency array []**
+**Case 2: Empty dependency array [ ]**
 ```jsx
 useEffect(() => {
     console.log("Hello");
